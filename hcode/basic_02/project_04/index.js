@@ -13,3 +13,17 @@ let calc = (x1, x2, operator) => {
 
 let result = calc(10, 1, '+');
 console.log(result);
+
+/*
+
+* callback
+When there is a function which is returned
+at the end of an action
+
+* DOM: Document object model
+Javascrit interacts with DOM
+
+* Events
+React with the user events with JavsScript
+
+*/
