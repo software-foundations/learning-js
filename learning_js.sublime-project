@@ -1,8 +1,49 @@
 {
+	"build_systems":
+	[
+		// default
+		{
+			// "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "node",
+			"selector": "source.js",
+			"shell_cmd": "\"/home/bruno/Documents/dev/learning_js/node-v14.16.0-linux-x64/bin/node\" \"$file\""
+		},
+
+		{
+			"auto_close": false,	
+			// "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"focus": true,
+			"name": "node terminal",
+			"post_window_hooks":
+			[
+				[
+					"carry_file_to_pane",
+					{
+						"direction": "right"
+					}
+				]
+			],
+			"selector": "source.js",
+			"shell_cmd": "\"/home/bruno/Documents/dev/learning_js/node-v14.16.0-linux-x64/bin/node\" \"$file\"",
+			"target": "terminus_open",
+			"timeit": true,
+			"title": "node terminal",
+			"working_dir": "$file_path"
+		}
+		
+	],
 	"folders":
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/home/bruno/Documents/dev/learning_js"
 		}
-	]
+	],
+	"settings":
+	{
+		"python_interpreter": "/home/bruno/Documents/dev/learning-tdd/venv-learning-tdd/bin/python",
+		"python_virtualenv": "/home/bruno/Documents/dev/learning-tdd/venv-learning-tdd/bin/python"
+	}
 }
