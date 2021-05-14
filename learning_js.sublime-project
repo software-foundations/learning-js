@@ -40,10 +40,5 @@
 		{
 			"path": "/home/bruno/Documents/dev/learning_js"
 		}
-	],
-	"settings":
-	{
-		"python_interpreter": "/home/bruno/Documents/dev/learning-tdd/venv-learning-tdd/bin/python",
-		"python_virtualenv": "/home/bruno/Documents/dev/learning-tdd/venv-learning-tdd/bin/python"
-	}
+	]
 }
