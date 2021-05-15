@@ -16,3 +16,17 @@ function sum(a, b = 1) {
 console.log(sum(2, 3))
 console.log(sum(2))
 console.log(sum())
+
+// Storage an arrow function in a variable
+
+const sum2 = (a, b) => {
+	return a + b
+}
+
+console.log(sum2(2, 3))
+
+// implicit return in arrow functions could be used when
+// the body of the arrow function has only one expression
+
+const subtraction = (a, b) => a - b
+console.log(subtraction(2, 3))
